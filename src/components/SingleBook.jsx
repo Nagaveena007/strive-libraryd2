@@ -11,10 +11,10 @@ class SingleBook extends Component {
         <Card
          onClick={() =>
           this.setState({
-            selectedBook:! this.state.singlebook
+            selectedBook:! this.state.selectedBook
           })
         }
-        style={{ height: "68vh", border:`1px solid ${this.state.selectedBook?"black":"red"}`}}>
+        style={{ height: "68vh", border:`3px solid ${this.state.selectedBook?"black":"red"}`}}>
           <Card.Img
             variant="top"
             style={{ height: "40vh", objectFit: "cover" }}
