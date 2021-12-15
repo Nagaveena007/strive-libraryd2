@@ -9,17 +9,20 @@ class SingleBook extends Component {
     return (
       <Col md={3} className="mb-2">
         <Card
-         onClick={() =>
-          this.setState({
-            selectedBook:! this.state.selectedBook
-          })
-        }
-        style={{ height: "68vh", border:`3px solid ${this.state.selectedBook?"black":"red"}`}}>
+          onClick={() =>
+            this.setState({
+              selectedBook: !this.state.selectedBook,
+            })
+          }
+          style={{
+            height: "68vh",
+            border: `3px solid ${this.state.selectedBook ? "red" : "black"}`,
+          }}
+        >
           <Card.Img
             variant="top"
             style={{ height: "40vh", objectFit: "cover" }}
             src={this.props.singlebook.img}
-           
           />
           <Card.Body>
             <Card.Title>{this.props.singlebook.title}</Card.Title>
