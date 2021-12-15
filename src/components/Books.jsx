@@ -10,7 +10,7 @@ class Books extends Component {
   render() {
     return (
       <>
-        <Row>
+        <Row-fluid>
           <Form>        
             <Form.Group className="mb-3">
             <Form.Label>Search</Form.Label>
